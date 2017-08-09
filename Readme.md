@@ -4,4 +4,4 @@
 
 * run app:
 
-`docker run -d --name dancer -p 5000:5000 -v $PWD:/app port22/dancer`
+`docker run --restart=always -d --name dancer -p 5000:5000 -v $PWD:/app port22/dancer`
