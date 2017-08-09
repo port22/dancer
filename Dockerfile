@@ -8,5 +8,5 @@ ENV TZ Europe/Berlin
 EXPOSE 5000
 
 WORKDIR /app
-COPY default.sh /
-CMD ["/default.sh"]
+COPY entrypoint.sh /
+CMD ["/entrypoint.sh"]
