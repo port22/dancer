@@ -1,6 +1,6 @@
 * generate app:
 
-`docker run -it -v $PWD:/app port22/dancer`
+`docker run -it --rm -v $PWD:/app port22/dancer`
 
 * run app:
 
