@@ -9,4 +9,5 @@ EXPOSE 5000
 
 WORKDIR /app
 COPY entrypoint.sh /
+RUN chmod 755 /entrypoint.sh
 CMD ["/entrypoint.sh"]
