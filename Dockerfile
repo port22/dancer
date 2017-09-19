@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk update && apk add curl wget perl-dev perl make gcc git tzdata libc-dev
+RUN apk update && apk add curl wget perl-dev perl make gcc git tzdata libc-dev docker
 
 RUN curl -L https://cpanmin.us | perl - App::cpanminus
 RUN cpanm Dancer2 Plack::Middleware::Deflater
