@@ -1,4 +1,5 @@
 FROM alpine:latest
+STOPSIGNAL 9
 RUN apk update && apk add curl wget perl-dev perl make gcc git tzdata libc-dev docker
 
 RUN curl -L https://cpanmin.us | perl - App::cpanminus
