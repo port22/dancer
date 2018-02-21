@@ -3,7 +3,7 @@ STOPSIGNAL 9
 RUN apk update && apk add curl wget perl-dev perl make gcc git tzdata libc-dev docker
 
 RUN curl -L https://cpanmin.us | perl - App::cpanminus
-RUN cpanm --force -n Dancer2 Plack::Middleware::Deflater Dancer2::Template::TemplateToolkit
+RUN cpanm --force -n Dancer2 Plack::Middleware::Deflater Dancer2::Template::TemplateToolkit Dancer2::Plugin::Auth::Extensible::Provider::LDAP File::Slurper DBD::SQLite Dancer2::Plugin::Database
 
 ENV TZ Europe/Berlin
 EXPOSE 5000
