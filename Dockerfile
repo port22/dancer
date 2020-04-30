@@ -12,7 +12,8 @@ RUN cpanm --force -n \
   File::Slurper \
   DBD::SQLite \
   JSON \
-  Digest::SHA
+  Digest::SHA \
+  File::Tail
 
 EXPOSE 5000
 WORKDIR /app
